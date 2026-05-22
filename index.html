@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <a href="#" class="logo">
+      <img src="./assets/images/logo.svg" alt="W. Logo">
+    </a>
+
+    <button class="menu-toggle" id="menuOpenBtn" aria-label="Open navigation menu">
+      <img src="./assets/images/icon-menu.svg" alt="">
+    </button>
+
+    <nav class="nav-container" id="sideNav">
+      <button class="menu-close" id="menuCloseBtn" aria-label="Close navigation menu">
+        <img src="./assets/images/icon-menu-close.svg" alt="">
+      </button>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+    <div class="overlay" id="navOverlay"></div>
+  </header>
+
+  <main class="homepage-grid">
+    
+    <section class="hero-feature">
+      <picture class="hero-image">
+        <source media="(max-width: 850px)" srcset="./assets/images/image-web-3-mobile.jpg">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="Bright abstract geometry blocks configuration representing Web 3.0 development">
+      </picture>
+      
+      <div class="hero-content">
+        <h1 class="hero-title">The Bright Future of Web 3.0?</h1>
+        <div class="hero-action-block">
+          <p class="hero-text">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+          <a href="#" class="read-more-btn">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <aside class="news-sidebar">
+      <h2 class="sidebar-heading">New</h2>
+      
+      <div class="sidebar-articles-list">
+        <article class="sidebar-item">
+          <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+
+        <article class="sidebar-item">
+          <h3><a href="#">The Downsides of AI Artistry</a></h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
+
+        <article class="sidebar-item">
+          <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </article>
+      </div>
+    </aside>
+
+    <section class="trending-row">
+      <h2 class="sr-only">Trending Content Items</h2>
+      
+      <article class="trending-card">
+        <div class="card-img-wrapper">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Retro vintage desktop personal computer setup display closeup">
+        </div>
+        <div class="card-info">
+          <span class="card-number">01</span>
+          <h3><a href="#">Reviving Retro PCs</a></h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+
+      <article class="trending-card">
+        <div class="card-img-wrapper">
+          <img src="./assets/images/image-top-laptops.jpg" alt="Under-lit custom customized mechanical keyboard illumination profiles view">
+        </div>
+        <div class="card-info">
+          <span class="card-number">02</span>
+          <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+
+      <article class="trending-card">
+        <div class="card-img-wrapper">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="White gaming controller dualshock gamepad hovering above handheld palm position">
+        </div>
+        <div class="card-info">
+          <span class="card-number">03</span>
+          <h3><a href="#">The Growth of Gaming</a></h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rudytowcalenieja</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
